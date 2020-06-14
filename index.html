@@ -53,5 +53,11 @@
 <footer>
 <address>Copyright(C)2020 Y K,Allright Reserved.</address>
 </footer>
+<script>
+$("iframe").on("load",function(){
+  $("iframe").contents().find('agent-avatar"').css("display","none");
+  //$("iframe").contents().find('b-agent-demo_header-icon').css("display","none");
+ });
+</script>
 </body>
 </html>
