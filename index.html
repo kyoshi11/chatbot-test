@@ -55,11 +55,9 @@
 <address>Copyright(C)2020 Y K,Allright Reserved.</address>
 </footer>
 <script>
-  $(function(){
-      $('iframe').on('load', function(){
+  $('iframe').on('load', function(){
           alert("ok");
-          $('iframe').contents().find('head').append('<link rel="stylesheet" href="style.css">');
-      });
+          $('iframe').contents().find('header').append('<link rel="stylesheet" href="style.css">');
   });
 </script>
 </body>
