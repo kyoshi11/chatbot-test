@@ -12,9 +12,16 @@
 
     }
 </style>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
-
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+  $(function(){
+    $('iframe').on('load', function(){
+          $('iframe').contents().find('header').append('<link rel="stylesheet" href="style.css">');
+          $('iframe').contents().find('agentDemoForm').css("background-color","aqua");
+    });
+  });
+</script>
 <body>
 <header>
     <h1>チャットボット テスト</h1>
@@ -54,12 +61,6 @@
 <footer>
 <address>Copyright(C)2020 Y K,Allright Reserved.</address>
 </footer>
-<script>
-  $('iframe').on('load', function(){
-          alert("ok");
-          $('iframe').contents().find('header').append('<link rel="stylesheet" href="style.css">');
-          $('iframe').contents().find('agentDemoForm').css("background-color","aqua");
-  });
-</script>
+
 </body>
 </html>
