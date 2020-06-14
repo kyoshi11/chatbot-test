@@ -56,8 +56,9 @@
 </footer>
 <script>
   $(function(){
-      $('#frame').on('load', function(){
-          $('#frame').contents().find('head').append('<link rel="stylesheet" href="style.css">');
+      $('iframe').on('load', function(){
+          
+          $('iframe').contents().find('head').append('<link rel="stylesheet" href="style.css">');
       });
   });
 </script>
