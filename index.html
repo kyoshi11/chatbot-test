@@ -54,11 +54,12 @@
 <footer>
 <address>Copyright(C)2020 Y K,Allright Reserved.</address>
 </footer>
-<script type="text/javascript">
-$("iframe").on("load",function(){
-  $("iframe").contents().find('#agent-avatar').css("display","none");
-  //$("iframe").contents().find('b-agent-demo_header-icon').css("display","none");
- });
+<script>
+  $(function(){
+      $('#frame').on('load', function(){
+          $('#frame').contents().find('head').append('<link rel="stylesheet" href="style.css">');
+      });
+  });
 </script>
 </body>
 </html>
