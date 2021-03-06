@@ -1,75 +1,53 @@
 <!doctype html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>チャットボット テスト</title>
-<!--
-<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/css.css" rel="stylesheet" type="text/css">
--->
-<style>
-.b-agent-demo_header{
-    background: plum;
-}
-</style>
-</head>
-<body>
+  <head>
+    <title>モノづくり応援隊 in 大田区（テスト中）</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script>
-  $(function(){
-    $('iframe').on('load', function(){
-          $('iframe').contents().find('header').append('<link rel="stylesheet" href="style.css">');
-          $('iframe').contents().find('#agentDemoForm').css("background-color","aqua");
-    });
-  });
-</script>
-<header>
-    <h1>チャットボット テスト</h1>
-</header>
-<!--
-<div id="branding">
-  <p>Simple Design.</p>
-</div>
-<nav>
-  <ul>
-    <li><a href="#">ナビ1</a></li>
-    <li><a href="#">ナビ2</a></li>
-    <li><a href="#">ナビ3</a></li>
-    <li><a href="#">ナビ4</a></li>
-  </ul>
-</nav>
-<section>
-<article>
-  <span class="date">ここに日付</span>
-  <h2>ここにタイトル</h2>
-  <p>
-   ここにテキスト
-  </p>
-  <a href="#" class="btn">&gt;もっと見る</a>
-</article>
-</section>
--->
-<!-- この下のiframeでチャットボットが動いていた-->
-<!--
-<iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/c69100bd-2f3f-48b6-a875-2b6544332dcb">
-</iframe>
--->
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="Ohta-Mono"
-  agent-id="ed2d03c4-6f2a-4ad2-af0f-cfacd54d6f9d"
-  language-code="ja"
-></df-messenger>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        モノづくり応援隊 in 大田区（テスト中）
+    </header>
+    <div class="btn-group　btn-group-sm" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Home</button>
+        <button type="button" class="btn btn-secondary">初めての方はこちら</button>
+        <button type="button" class="btn btn-secondary">支援サービス</button>
+        <button type="button" class="btn btn-secondary">専門家サービス</button>
+        <button type="button" class="btn btn-secondary">支援実績</button>
+        <button type="button" class="btn btn-secondary">会員紹介</button>
+        <button type="button" class="btn btn-secondary">法人概要</button>
+    </div>
 
-<footer>
-<address>©2021 Y.K</address>
-</footer>
-
-</body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1438" height="674" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#555" dy=".3em"><img src="img/img1.png" /></text></svg>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1438" height="674" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Second slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"/><text x="50%" y="50%" fill="#444" dy=".3em"><img src="img/img2.png" /></text></svg>
+          </div>
+        </div>
+    </div>
+    <h2>チャットボット テスト</h2>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Ohta-Mono"
+      agent-id="ed2d03c4-6f2a-4ad2-af0f-cfacd54d6f9d"
+      language-code="ja"
+    ></df-messenger>
+    <footer>
+        <address>©2021 Y.K</address>
+    </footer>
+  </body>
 </html>
