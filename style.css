@@ -1,14 +1,21 @@
 #body{
     background-color: plum;
 }
-#agent-avatar{
-    display: none;
-}
-
-#agentDemoForm{
-    background-color: aqua;
-}
-
-.b-agent-demo_header{
-    background: plum;
-}
+.carousel-item .img-fluid {
+    width:100%;
+    height:auto;
+  }
+  
+  .carousel-item{
+    height: auto;
+  }
+  
+  .carousel-item a {
+    display: block;
+    width:100%;
+  }
+  
+  .carousel-item .show-image {
+    display: block;
+    width:100%;
+  }
