@@ -19,3 +19,8 @@
     display: block;
     width:100%;
   }
+
+  df-messenger {
+    --df-messenger-button-titlebar-color: #d8d8d8; /* タイトルバーとアイコンの背景色 */
+    --df-messenger-button-titlebar-font-color: #27282b; /* フォントカラー */
+  }
