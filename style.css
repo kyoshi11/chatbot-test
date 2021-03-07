@@ -24,3 +24,9 @@
     --df-messenger-button-titlebar-color: #d8d8d8; /* タイトルバーとアイコンの背景色 */
     --df-messenger-button-titlebar-font-color: #27282b; /* フォントカラー */
   }
+
+  .btn-group {
+      font-size: 10pt;
+      background-color: #cccccc;
+      color: #000
+  }
